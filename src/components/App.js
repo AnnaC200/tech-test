@@ -4,7 +4,9 @@ import Search from "../components/Search";
 import SearchResults from "./SearchResults";
 
 function App() {
-  const [searchResults, setSearchResults] = useState ()
+  const [searchResults, setSearchResults] = useState ([])
+  // searchResults.map((e) => console.log(e))
+
 
   return (
     <div className="app">
@@ -15,7 +17,7 @@ function App() {
       />
       <Search setSearchResults={setSearchResults} />
       {/* Search component, passing in as a prop */}
-      <SearchResults />
+      <SearchResults results={searchResults} />
     </div>
   );
 }

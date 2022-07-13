@@ -1,8 +1,5 @@
-.mock-image {
-    width: 20%;
-    height: 50px;
-    border-radius: 11px;
-    font-size: 20px;
-    padding: 0 10px;
-    margin:auto;
+.search-results {
+    margin: auto;
+    width: 500px;
+    height: 500px;
 }

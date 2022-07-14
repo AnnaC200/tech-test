@@ -17,7 +17,7 @@ function App() {
       />
       <Search setSearchResults={setSearchResults} />
       {/* Search component, passing in as a prop */}
-      <SearchResults results={searchResults} />
+      <SearchResults searchResults={searchResults} />
     </div>
   );
 }

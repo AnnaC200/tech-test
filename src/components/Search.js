@@ -1,14 +1,15 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "../styles/search.css";
 import getImages from "../requests/getImages";
 
 const Search = ({setSearchResults}) => {
   const[value, setValue] = useState();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
   // this will stop our app re-rendering on submit.
-    setSearchResults(getImages(value));
+    setSearchResults(await getImages(value));
   };
 
   return(
@@ -29,3 +30,7 @@ const Search = ({setSearchResults}) => {
 }
 
 export default Search;
+
+Search.propTypes = {
+  setSearchResults: PropTypes.func.isRequired
+};

@@ -24,7 +24,9 @@ exports[`App renders app components correctly 1`] = `
         Go!
       </button>
     </form>
-    <p>
+    <p
+      class="no-results"
+    >
       No results
     </p>
   </div>

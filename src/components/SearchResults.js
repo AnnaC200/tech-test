@@ -4,6 +4,7 @@ import "../styles/searchResults.css";
 
 const SearchResults = ({ searchResults }) => {
   console.log(searchResults, "<-- results in search results")
+  // CL above will return an empty array
   if (!searchResults.length) {
     return <p className="no-results">No results</p>
   } else {

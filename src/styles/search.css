@@ -5,11 +5,13 @@
     border-radius: 11px;
     font-size: 20px;
     padding: 0 10px;
+
 }
 
 .search-form {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }

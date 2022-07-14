@@ -1,8 +1,7 @@
 .search-results {
-    margin: auto;
-    width: auto;
-    height: auto;
-  
+    column-count: 4;
+    column-gap: 15px;
+    margin: 50px;
 }
 
 .no-results {
